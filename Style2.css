@@ -1,0 +1,37 @@
+.main{
+    background-color:lemonchiffon;
+}
+h1{
+    text-align: center;
+    background-color: maroon;
+    color: bisque;
+    
+
+}
+.div1{
+    padding-bottom:0px;
+}
+.p1{
+   background-color:red;
+}
+.d1{
+    color: red;
+}
+
+.d2{width: 150px;
+    padding-left: 12px;
+    padding-top: 12px;
+    border: dotted 2px gray;
+}
+td{
+    background-color: gray;
+}
+h2{
+    background-color: green;
+}
+h3{
+    color:gray;
+}
+button{
+    margin-bottom: 10px;
+}
