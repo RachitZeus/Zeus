@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'Arial';
+    font-display: optional;
+    src: url('C:\Users\User\Desktop\DPAF\Quicksand-VariableFont_wght.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family:'Arial';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #25313F;
+    padding: 8px 30px;
+    display: flex;
+    border-bottom: 2px solid;
+    border-color: #3AC7EC;
+}
+
+.header-title {
+    color: #FFFFFF;
+    font: normal normal bold 20px/18px 'Quicksand';
+    margin-left: 5px;
+}
+
+.main {
+    padding: 20px 36px 24px 36px;
+    margin: 50px 268px auto 268px;
+    height: fit-content;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-top: 4px solid;
+    border-color: #3AC7EC;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.form-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.title {
+    margin: 0 auto;
+    font: normal normal bold 24px/28px 'Quicksand';
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+}
+
+.school-label {
+    margin-right: 32px;
+    text-align: left;
+    font: normal normal bold 16px/20px 'Quicksand';
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    font: normal normal bold 24px/17px Material-Design-Iconic-Font;
+    letter-spacing: 0px;
+    accent-color: #1F7A54;
+    opacity: 1;
+}
+
+
+
+.state-district-label {
+    text-align: left;
+    font: normal normal bold 12px/16px 'Quicksand';
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+}
+
+.state-district-select {
+    width: 100%;
+    text-align: left;
+    font: normal normal bold 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.username-password-input {
+    width: 100%;
+    text-align: left;
+    font: normal normal bold 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+}
+
+.state-input {
+    width: 100%;
+    border: none;
+    text-align: left;
+    font: normal normal bold 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+}
+
+.password-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-underline {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+.forgot-labels {
+    text-align: right;
+    font: normal normal bold 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1F7A54;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.school-type-select {
+    margin-bottom: 23px;
+}
+
+.state-select-div {
+    margin-bottom: 36px;
+}
+
+.district-select-div {
+    margin-bottom: 56px;
+}
+
+.username-div {
+    margin-bottom: 33px;
+}
+
+.password-div {
+    margin-bottom: 24px;
+}
+
+.rememberme-div {
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.submit {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    width: 216px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background: #3FD28B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 5px #0000003D;
+}
+
+.input-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.submit-div {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    font: normal normal bold 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1F7A54;
+    margin: 16px;
+}
+
+.pipe {
+    color: #0000001F;
+    margin: 0 5px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #E0E1E1;
+    padding-top:13px;
+    padding-bottom: 13px;
+    margin-bottom: 0%;
+}
+
+.footer-quantum {
+    font: normal normal bold 14px/18px Quicksand;
+    color: #1F2834;
+}
+
+.footer-text {
+    font: normal normal bold 12px/16px Quicksand;
+    letter-spacing: 0px;
+    color: #616161;
+    margin: 0 5px;
+}
+
+.company-name{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        margin: 50px 140px auto 140px;
+    }
+}
