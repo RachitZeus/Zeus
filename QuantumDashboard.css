@@ -187,12 +187,12 @@ body {
     color: #666666;
 }
 
-.pipe {
+.subject {
     margin: 0 5px;
     color: rgb(0, 0, 0, 0.12);
 }
 
-.plus {
+.add {
     margin-left: 5px;
     color: #1F7A54;
 }
@@ -241,7 +241,7 @@ body {
     margin: auto 16px 16px 16px;
 }
 
-.pipe {
+.subject {
     color: #0000001F;
     margin: 0 5px;
 }
