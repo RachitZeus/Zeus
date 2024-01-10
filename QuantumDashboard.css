@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Quicksand';
     font-display: optional;
-    src: url('C:\Users\User\Desktop\DPAF\Quicksand-VariableFont_wght.woff2') format('woff2');
+    src: url('Quicksand-VariableFont_wght.woff2') format('woff2');
 }
 
 * {
@@ -135,9 +135,9 @@ body {
     border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
     width: 180px;
     background-color: #eeeeee;
-    font: normal normal bold 16px/20px 'Quicksand';
+    font: normal normal medium 16px 'Quicksand';
     letter-spacing: 0px;
-    color: #333333;
+    color: #666666;
     margin-right: 24px;
 }
 
