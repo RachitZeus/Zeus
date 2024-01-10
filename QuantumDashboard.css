@@ -34,19 +34,25 @@ body {
 }
 
 .nav {
-    text-align: right;
+    text-align: center;
     letter-spacing: 0px;
     color: #3FD28B;
     text-transform: uppercase;
-    margin: 0 16px;
+    margin-right:  16px;
+    
     padding: 8px 0 4px 0;
     border-bottom: 4px solid #25313F;
+}
+.large-screen{
+    margin-top: 19px;
+    margin-bottom:10px;
 }
 
 .nav:hover {
     color: #ffffff;
     border-bottom: 4px solid #ffffff;
     cursor: pointer;
+    margin-bottom: 0px;
 }
 
 .profile>img{
@@ -177,7 +183,7 @@ body {
 }
 
 .course-name {
-    font: normal normal bold 16px/20px 'Quicksand';
+    font: normal normal 500 18px/20px 'Quicksand';
     color: #222222;
     margin-right: auto;
 }
@@ -204,7 +210,7 @@ body {
 }
 
 .course-class-input {
-    font: normal normal bold 16px/20px 'Quicksand';
+    font: normal normal bold 18px/20px 'Quicksand';
     color: #222222;
     border: none;
     border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
@@ -291,4 +297,7 @@ body {
     .footer-text{
         flex-direction: column;
     }
+}
+.disable{
+    opacity: 0.4;
 }
