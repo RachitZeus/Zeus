@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Arial';
     font-display: optional;
-    src: url('C:\Users\User\Desktop\DPAF\Quicksand-VariableFont_wght.woff2') format('woff2');
+    src: url('Quicksand-VariableFont_wght.woff2') format('woff2');
 }
 
 * {
@@ -22,6 +22,7 @@ body {
     display: flex;
     border-bottom: 2px solid;
     border-color: #3AC7EC;
+    
 }
 
 .header-title {
@@ -47,7 +48,7 @@ body {
 
 .title {
     margin: 0 auto;
-    font: normal normal bold 24px/28px 'Quicksand';
+    font: normal normal 500 40px/28px 'Quicksand';
     letter-spacing: 0px;
     color: #222222;
     opacity: 1;
@@ -56,7 +57,7 @@ body {
 .school-label {
     margin-right: 32px;
     text-align: left;
-    font: normal normal bold 16px/20px 'Quicksand';
+    font: normal normal medium 16px/20px 'Quicksand';
     letter-spacing: 0px;
     color: #333333;
     opacity: 1;
@@ -64,17 +65,18 @@ body {
 
 input[type="radio"],
 input[type="checkbox"] {
-    font: normal normal bold 24px/17px Material-Design-Iconic-Font;
+    font: normal normal medium 24px/17px Material-Design-Iconic-Font;
     letter-spacing: 0px;
     accent-color: #1F7A54;
     opacity: 1;
+    color:  #1F7A54;
 }
 
 
 
 .state-district-label {
     text-align: left;
-    font: normal normal bold 12px/16px 'Quicksand';
+    font: normal normal lighter 12px/16px 'Quicksand';
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
@@ -83,7 +85,7 @@ input[type="checkbox"] {
 .state-district-select {
     width: 100%;
     text-align: left;
-    font: normal normal bold 16px/20px Quicksand;
+    font: normal normal 500 16px/20px 'Quicksand';
     letter-spacing: 0px;
     color: #222222;
     opacity: 1;
@@ -95,7 +97,7 @@ input[type="checkbox"] {
 .username-password-input {
     width: 100%;
     text-align: left;
-    font: normal normal bold 16px/20px Quicksand;
+    font: normal normal 500 16px/20px 'Quicksand';
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
@@ -105,7 +107,7 @@ input[type="checkbox"] {
     width: 100%;
     border: none;
     text-align: left;
-    font: normal normal bold 16px/20px Quicksand;
+    font: normal normal bold 16px/20px 'Quicksand';
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
@@ -124,7 +126,7 @@ input[type="checkbox"] {
 
 .forgot-labels {
     text-align: right;
-    font: normal normal bold 14px/18px Quicksand;
+    font: normal normal medium 14px/18px Quicksand;
     letter-spacing: 0px;
     color: #1F7A54;
     text-transform: uppercase;
@@ -153,7 +155,7 @@ input[type="checkbox"] {
 
 .rememberme-div {
     margin-bottom: 32px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .submit {
@@ -171,6 +173,7 @@ input[type="checkbox"] {
 .input-icon{
     width: 18px;
     height: 18px;
+    color:  #1F7A54;
 }
 
 .submit-div {
@@ -184,7 +187,7 @@ input[type="checkbox"] {
     justify-content: center;
     display: flex;
     margin: 0 auto;
-    font: normal normal bold 14px/18px Quicksand;
+    font: normal normal medium 14px/18px Quicksand;
     letter-spacing: 0px;
     color: #1F7A54;
     margin: 16px;

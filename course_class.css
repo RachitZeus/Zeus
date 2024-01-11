@@ -1,0 +1,32 @@
+.course-class-toggle {
+  background-color: #8DDC97;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses-toggle,
+.classes-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0px;
+  color: #222222;
+  border-bottom: 4px solid #8DDC97;
+}
+
+.courses-toggle:hover,
+.classes-toggle:hover {
+  border-bottom: 4px solid #222222;
+  cursor: pointer;
+}
+
+.courses-nos,
+.classes-nos {
+  font: normal normal bolder 24px/28px "Quicksand";
+  margin: 19px 8px 15px 8px;
+}
+
+.courses-toggle-label,
+.classes-toggle-label {
+  font: normal normal bold 16px/20px "Quicksand";
+}/*# sourceMappingURL=course_class.css.map */

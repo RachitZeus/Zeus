@@ -1,0 +1,100 @@
+.line {
+    border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
+    margin-bottom: 24px;
+}
+
+.filter-panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0px;
+}
+
+.showing-label {
+    align-self: flex-end;
+    font: normal normal medium 12px/14px 'Quicksand';
+    letter-spacing: 0px;
+    color: #686868;
+}
+
+.filter-div {
+    display: flex;
+}
+
+.sort-by-label {
+    font: normal normal bold 12px/16px 'Quicksand';
+    letter-spacing: 0px;
+    color: #686868;
+}
+.subject {
+    margin: 0 5px;
+    color: rgb(0, 0, 0, 0.12);
+}
+
+.add {
+    margin-left: 5px;
+    color: #1F7A54;
+}
+
+.number-line-2 {
+    font-weight: bolder;
+    color: #222222;
+    margin-right: 4px;
+}
+
+
+
+.lm {
+    margin-left: 4px;
+}
+
+
+
+.courses-icons>img:hover,
+.star:hover,
+.sort:hover,
+.contact:hover,
+.about:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.contact-div {
+    justify-content: center;
+    display: flex;
+    font: normal normal bold 14px/18px 'Quicksand';
+    letter-spacing: 0px;
+    color: #1F7A54;
+    margin: auto 16px 16px 16px;
+}
+
+.subject {
+    color: #0000001F;
+    margin: 0 5px;
+}
+.company-name {
+    font-weight: bolder;
+}
+.num{
+    height: 1rem;
+    width: 0.9rem;
+    font-size: 0.8rem;
+    position: relative;
+    top:-2rem;
+    right:-0.85rem;
+    color: white;
+    background-color: #2A7FF3;
+    border-radius: 50%;
+    text-align: center;
+}
+.num1{
+    height: 0.9rem;
+    width: 0.9rem;
+    font-size: 0.8rem;
+    position: relative;
+    top:-2.1rem;
+    color: black;
+    right:-0.8rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}

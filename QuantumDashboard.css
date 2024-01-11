@@ -16,6 +16,7 @@ body {
 }
 
 .flex {
+    
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -47,7 +48,7 @@ body {
 .large-screen{
     margin-top: 12px;
     margin-bottom:19px;
-    padding-left: 12px;
+    padding-left: 1px;
 }
 
 .nav:hover {
@@ -133,7 +134,7 @@ body {
 }
 
 .sort-by-label {
-    font: normal normal bold 12px/16px 'Quicksand';
+    font: normal normal 400 12px/16px 'Quicksand';
     letter-spacing: 0px;
     color: #686868;
 }
@@ -143,9 +144,9 @@ body {
     border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
     width: 180px;
     background-color: #eeeeee;
-    font: normal normal medium 16px 'Quicksand';
+    font: normal normal 500 18px 'Quicksand';
     letter-spacing: 0px;
-    color: #666666;
+    color: #333333;
     margin-right: 24px;
 }
 
@@ -167,6 +168,9 @@ body {
 
 .course-img {
     margin: 24px 16px 16px 24px;
+}
+.course-img1 {
+    margin: 10px 16px 16px 24px;
 }
 
 .courses-details {
@@ -193,6 +197,7 @@ body {
 .regular-course-label {
     font: normal normal medium 12px/16px 'Quicksand';
     color: #666666;
+    
 }
 
 .subject {
@@ -216,7 +221,7 @@ body {
     color: #222222;
     border: none;
     border-bottom: rgb(0, 0, 0, 0.12) 1px solid;
-    margin: 18px 0 13px 0;
+    margin: 18px 0 8px 0;
 }
 
 .lm {
@@ -326,4 +331,20 @@ body {
 }
 .disable{
     opacity: 0.4;
+}
+.star-disabled{
+    
+    opacity:0.1;
+}
+#expired{
+    color: red;
+    font-weight: bold;
+    background-color: #FFE4E6;
+    padding: 0.2rem;
+    width: fit-content;
+    position: relative;
+    margin-bottom:0px;
+    height:12px;
+    
+    font-size: 0.7rem;
 }

@@ -1,0 +1,106 @@
+$colorwhite:white;
+$colorblack:#222222;
+$colorgrey:#666666;
+$fontstyle:Quicksand;
+$h100:100%;
+
+@font-face {
+    font-family: 'Quicksand';
+    font-display: optional;
+    src: url('Quicksand-VariableFont_wght.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    background-color:#eeeeee;
+    font-family:$fontstyle;
+    height:$h100;
+}
+
+.flex {
+    
+     display: flex;
+     flex-direction: column;
+    height: 100%;
+ }
+
+
+@import "./Headers.scss";
+@import "./nav.scss";
+
+.large-screen{
+    margin-top: 12px;
+    margin-bottom:19px;
+    padding-left: 1px;
+}
+
+
+
+.profile>img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 100%;
+    border:white 2px solid;
+}
+
+.menu{
+    display: none;
+}
+
+.dashboard {
+    margin-left: auto;
+}
+
+.main {
+    margin: 20px;
+}
+
+
+@import "./course_class.scss";
+
+
+@import "./course_class2.scss";
+.line-1,
+.line-2,
+.line-3,
+.line-4 {
+    display: flex;
+    margin: 7px 0 0 0;
+}
+
+
+
+
+@import "./footer.scss";
+
+
+@import "./labels_class.scss";
+@media screen and (max-width: 1000px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .bell{
+        margin-left: auto;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .footer-text{
+        flex-direction: column;
+    }
+}
+.disable{
+    opacity: 0.4;
+}
