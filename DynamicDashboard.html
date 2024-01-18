@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="Quicksand-VariableFont_wght.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="QuantumDashboard.css">
+    
+    <title>Document</title>
+    <!-- <script>
+        const coursesData = [
+            {
+                "name": "Accleration",
+                "subject": "Physics",
+                "grade": 7,
+                "units": 4,
+                "lessons": 18,
+                "topics": 24,
+                "students": 50,
+                "startDate": "21-Jan-2020",
+                "endDate": "21-Aug-2020"
+            },
+            {
+                "name": "Displacement,Velocity and speed",
+                "subject": "Physics",
+                "grade": 6,
+                "units": 4,
+                "lessons": 15,
+                "topics": 20,
+                
+            },
+            {
+                "name": "Introduction to Biology:Micro Organisms and how they are affec...",
+                "subject": "Biology",
+                "grade": 7,
+                "units": 4,
+                "lessons": 18,
+                "topics": 24,
+                "students": 50,
+                
+            },
+            {
+                "name": "Introduction to High School Mathematics",
+                "subject": "Mathematics",
+                "grade": 8,
+                "students": 300,
+                "startDate": "21-Jan-2020",
+                "endDate": "21-Aug-2020"
+            }
+            // Add data for other courses here
+        ];
+
+        function populateCourseData() {
+            const coursesGrid = document.querySelector('.courses-grid');
+
+            coursesData.forEach(courseData => {
+                const courseCard = document.createElement('div');
+                courseCard.className = 'course-card';
+
+                const courseElement = document.createElement('div');
+                courseElement.className = 'course';
+
+                const imgElement = document.createElement('img');
+                imgElement.src = 'imageMask-1.svg'; // Set your image source
+                imgElement.alt = '';
+                imgElement.className = 'course-img';
+
+                const courseDetails = document.createElement('div');
+                courseDetails.className = 'courses-details';
+
+                // Build the HTML for course details based on courseData
+                courseDetails.innerHTML = `
+                    <div class="line-1">
+                        <div class="course-name">${courseData.name}</div>
+                        <img class="star" src="favourite.svg" alt="">
+                    </div>
+                    <div class="line-2 regular-course-label">
+                        ${courseData.subject}
+                        <div class="subject">|</div>
+                        Grade
+                        <div class="result">${courseData.grade}</div>
+                        <div class="add">+2</div>
+                    </div>
+                    <div class="line-3 regular-course-label">
+                        <div class="number-line-2">${courseData.units}</div>
+                        Units
+                        <div class="number-line-2 lm">${courseData.lessons}</div>
+                        Lessons
+                        <div class="number-line-2 lm">${courseData.topics}</div>
+                        Topics
+                    </div>
+                    <select name="" id="" class="course-class-input">
+                        <option value="">Mr. Frank's Class A</option>
+                        <option value="">Mr. Frank's Class B</option>
+                    </select>
+                    <div class="line-4 regular-course-label">
+                        <div>${courseData.students} Students</div>
+                        <div class="subject">|</div>
+                        <div>${courseData.startDate}</div>
+                        <div class="subject">-</div>
+                        <div>${courseData.endDate}</div>
+                    </div>
+                `;
+
+                courseElement.appendChild(imgElement);
+                courseElement.appendChild(courseDetails);
+                courseCard.appendChild(courseElement);
+
+                const coursesIcons = document.createElement('div');
+                coursesIcons.className = 'courses-icons';
+
+                // Include your icons here
+                // ...
+
+                courseCard.appendChild(coursesIcons);
+
+                coursesGrid.appendChild(courseCard);
+            });
+        }
+
+        // Call the function to populate data when the page loads
+        window.onload = populateCourseData;
+    </script> -->
+</head>
+
+<!-- <body>
+    <div class="flex">
+        <div class="header">
+            <img src="logo used in header.svg" alt="quantum">
+            <div class="dashboard nav large-screen">DASHBOARD</div>
+            <div class="nav large-screen">CONTENT</div>
+            <div class="nav large-screen">USERS</div>
+            <div class="nav large-screen">REPORTS</div>
+            <div class="nav large-screen">ADMIN</div>
+            <div class="nav bell large-screen"><img src="alerts.svg" alt="Alert as image."><div class="num">2</div></div>
+            <div class="nav large-screen"><img src="announcements.svg" alt="announcements as image"><div class="num">1</div></div>
+            <div class="nav profile large-screen"><img src="Rachit_Modi_Photo.jpeg" alt="" ><div class="num1">T</div></div>
+            <div class="nav menu large-screen"><img src="hamburger-menu.svg" alt=""></div>
+        </div>
+        <div class="main">
+            <div class="course-class-toggle">
+                <div class="courses-toggle">
+                    <img src="courses.svg" alt="courses img">
+                    <div class="courses-nos">4</div>
+                    <div class="courses-toggle-label">Courses</div>
+                </div>
+                <div class="classes-toggle">
+                    <img src="classes.svg" alt="classes img">
+                    <div class="classes-nos">11</div>
+                    <div class="classes-toggle-label">Classes</div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="filter-panel">
+                    <div class="showing-label">Showing 4 of 4 Courses</div>
+                    <div class="filter-div">
+                        <div class="sort-by-label">Sort By :</div>
+                        <select name="course" id="course" class="courses-select">
+                            <option value="" disabled selected>Course Name</option>
+                            <option value="">Acceleration</option>
+                            <option value="">Displacement, Velocity and Speed</option>
+                            <option value="">Introduction to Biology: Micro organisms and how they affec...</option>
+                            <option value="">Introduction to High School Mathematics</option>
+                        </select>
+                        <img src="sort.svg" alt="sort img" class="sort">
+                    </div>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course">
+                        <img src="imageMask-1.svg" alt="" class="course-img">
+                        <div class="courses-details">
+                            <div class="line-1">
+                                <div class="course-name">Accleration</div> <img class="star"
+                                    src="favourite.svg" alt="">
+                            </div>
+                            <div class="line-2 regular-course-label">
+                                Physics
+                                <div class="subject">|</div>
+                                Grade
+                                <div class="result">7</div>
+                                <div class="add">+2</div>
+                            </div>
+                            <div class="line-3 regular-course-label">
+                                <div class="number-line-2">4</div>
+                                Units
+                                <div class="number-line-2 lm">18</div>
+                                Lessons
+                                <div class="number-line-2 lm">24</div>
+                                Topics
+                            </div>
+                            <select name="" id="" class="course-class-input">
+                                <option value="">Mr. Frank's Class A</option>
+                                <option value="">Mr. Frank's Class B</option>
+                            </select>
+                            <div class="line-4 regular-course-label">
+                                <div>50 Students</div>
+                                <div class="subject">|</div>
+                                <div>21-Jan-2020</div>
+                                <div class="subject">-</div>
+                                <div>21-Aug-2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-icons">
+                        <img src="preview.svg" alt="">
+                        <img src="manage course.svg" alt="">
+                        <img src="grade submissions.svg" alt="">
+                        <img src="reports.svg" alt="">
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course">
+                        <img src="D:\Downloads\imageMask-1.png" alt="" class="course-img">
+                        <div class="courses-details">
+                            <div class="line-1">
+                                <div class="course-name">Displacement, Velocity and Speed</div> <img class="star"
+                                    src="favourite.svg" alt="">
+                            </div>
+                            <div class="line-2 regular-course-label">
+                                Physics - 2
+                                <div class="subject">|</div>
+                                Grade
+                                <div class="result">6</div>
+                                <div class="add">+3</div>
+                            </div>
+                            <div class="line-3 regular-course-label">
+                                <div class="number-line-2">2</div>
+                                Units
+                                <div class="number-line-2 lm">15</div>
+                                Lessons
+                                <div class="number-line-2 lm">20</div>
+                                Topics
+                            </div>
+                            <select name="" id="" class="course-class-input">
+                                <option value="">No class</option>
+                                <option value="">Mr. Frank's Class A</option>
+                                <option value="">Mr. Frank's Class B</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="courses-icons">
+                        <img src="preview.svg" alt="">
+                        <img src="manage course.svg " alt="" class="disable">
+                        <img src="grade submissions.svg" alt="" class="disable">
+                        <img src="reports.svg" alt="">
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course">
+                        <img src="D:\Downloads\imageMask-3.png" alt="" class="course-img">
+                        <div class="courses-details">
+                            <div class="line-1">
+                                <div class="course-name">Introduction to Biology: Micro organisms and how they affec...
+                                </div> <img class="star" src="favourite.svg" alt="">
+                            </div>
+                            <div class="line-2 regular-course-label">
+                                Biology
+                                <div class="subject">|</div>
+                                Grade
+                                <div class="result">4</div>
+                                <div class="add">+1</div>
+                            </div>
+                            <div class="line-3 regular-course-label">
+                                <div class="number-line-2">5</div>
+                                Units
+                                <div class="number-line-2 lm">16</div>
+                                Lessons
+                                <div class="number-line-2 lm">22</div>
+                                Topics
+                            </div>
+                            <select name="" id="" class="course-class-input">
+                                <option value="">All Classes</option>
+                                <option value="">Mr. Frank's Class A</option>
+                                <option value="">Mr. Frank's Class B</option>
+                            </select>
+                            <div class="line-4 regular-course-label">
+                                <div>300 Students</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-icons">
+                        <img src="preview.svg" alt="">
+                        <img src="manage course.svg" alt="" class="disable">
+                        <img src="grade submissions.svg" alt="" class="disable">
+                        <img src="reports.svg" alt="">
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div id="expired">EXPIRED</div>
+                    <div class="course">
+                        
+                        <img src="imageMask-2.png" alt="" class="course-img1">
+                        <div class="courses-details">
+                            <div class="line-1">
+                                <div class="course-name">Introduction to High School Mathematics</div> 
+                            </div>
+                            <div class="line-2 regular-course-label">
+                                Mathematics
+                                <div class="subject">|</div>
+                                Grade
+                                <div class="result">8</div>
+                                <div class="add">+3</div>
+                            </div>
+                            <select name="" id="" class="course-class-input">
+                                <option value="">Mr. Frank's Class A</option>
+                                <option value="">Mr. Frank's Class B</option>
+                            </select>
+                            <div class="line-4 regular-course-label">
+                                <div>44 Students</div>
+                                <div class="subject">|</div>
+                                <div>14-Oct-2019</div>
+                                <div class="subject">-</div>
+                                <div>20-Oct-2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-icons">
+                        <img src="preview.svg" alt="">
+                        <img src="manage course.svg" alt="">
+                        <img src="grade submissions.svg" alt="">
+                        <img src="reports.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="contact-div"><div class="about">About</div><div class="pipe">|</div><div class="contact">Contact Us</div></div>
+        <div class="footer">
+            <div class="footer-text">
+                <img src="logo used in footer.svg" alt="quantum">
+                <span class="pipe large-screen">|</span><span class="footer-text">Copyright © 2020-2021</span><span
+                    class="footer-text company-name">Zeus Systems Pvt. Ltd.</span><span class="footer-text">All rights
+                    reserved.</span>
+            </div>
+        </div>
+    </div>
+</body> -->
+<body>
+    <div class="flex">
+        <div class="header">
+            <img src="logo used in header.svg" alt="quantum">
+            <div class="dashboard nav large-screen">DASHBOARD</div>
+            <div class="nav large-screen">CONTENT</div>
+            <div class="nav large-screen">USERS</div>
+            <div class="nav large-screen">REPORTS</div>
+            <div class="nav large-screen">ADMIN</div>
+            <div class="nav bell large-screen"><img src="alerts.svg" alt="Alert as image."><div class="num">2</div>
+            <div class="alerts-announcements">
+                <div class="alert-cont"></div>
+                <div class="alert-show-button">Show All</div>
+            </div>
+        </div>
+            <div class="nav large-screen"><img src="announcements.svg" alt="announcements as image"><div class="num">1</div>
+            <div class="alerts-announcements">
+                <div class="announcement-cont"></div>
+                <div class="announcement-show-button">
+                    <div class="announcement-buttons seperator">Show All</div>
+                    <div class="announcement-buttons">Create New</div>
+                </div>
+            </div>
+        </div>
+            <div class="nav profile large-screen"><img src="Rachit_Modi_Photo.jpeg" alt="" ><div class="num1">T</div></div>
+            <div class="nav menu"><img src="hamburger-menu.svg" alt="">
+                <div class="hamburger-menu">
+                    <div class="menuitem">DASHBOARD <img class="arrow" src="arrow-down.svg" alt="Down Arrow"></div>
+                    <div class="menuitem">CONTENT <img class="arrow" src="arrow-down.svg" alt="Down Arrow"></div>
+                    <div class="menuitem">USERS <img class="arrow" src="arrow-down.svg" alt="Down Arrow"></div>
+                    <div class="menuitem">REPORTS <img class="arrow" src="arrow-down.svg" alt="Down Arrow"></div>
+                    <div class="menuitem">ADMIN <img class="arrow" src="arrow-down.svg" alt="Down Arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="course-class-toggle">
+                <div class="courses-toggle">
+                    <img src="courses.svg" alt="courses img">
+                    <div class="courses-nos">4</div>
+                    <div class="courses-toggle-label">Courses</div>
+                </div>
+                <div class="classes-toggle">
+                    <img src="classes.svg" alt="classes img">
+                    <div class="classes-nos">11</div>
+                    <div class="classes-toggle-label">Classes</div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="filter-panel">
+                    <div class="showing-label">Showing 4 of 4 Courses</div>
+                    <div class="filter-div">
+                        <div class="sort-by-label">Sort By :</div>
+                        <select name="course" id="course" class="courses-select">
+                            <option value="" disabled selected>Course Name</option>
+                            <!-- Add dynamically generated options here if needed -->
+                        </select>
+                        <img src="sort.svg" alt="sort img" class="sort">
+                    </div>
+                </div>
+            </div>
+            <div class="courses-grid" id="courses-container">
+                <!-- Course cards will be dynamically added here -->
+            </div>
+        </div>
+        <div class="contact-div"><div class="about">About</div><div class="pipe">|</div><div class="contact">Contact Us</div></div>
+        <div class="footer">
+            <div class="footer-text">
+                <img src="logo used in footer.svg" alt="quantum">
+                <span class="pipe large-screen">|</span><span class="footer-text">Copyright © 2020-2021</span><span
+                    class="footer-text company-name">Zeus Systems Pvt. Ltd.</span><span class="footer-text">All rights
+                    reserved.</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const coursesData = [
+            {
+                "id":1,
+                "name": "Accleration",
+                "subject": "Physics",
+                "grade": 7,
+                "plus":2,
+                "units": 4,
+                "lessons": 18,
+                "topics": 24,
+                "students": 50,
+                "startDate": "21-Jan-2020",
+                "endDate": "21-Aug-2020",
+                "img":"imageMask-1.svg",
+                "classes": ["Mr. Frank's Class A", "Mr. Frank's Class B"]
+            },
+            {
+                "id":2,
+                "name": "Displacement, Velocity and Speed",
+                "subject": "Physics",
+                "plus":3,
+                "grade": 6,
+                "units": 4,
+                "lessons": 15,
+                "topics": 20,
+                "img":"imageMask-1.png",
+                "classes": []
+            },
+            {
+                "id":3,
+                "name": "Introduction to Biology: Micro organisms and how they affec...",
+                "subject": "Biology",
+                "grade": 7,
+                "plus":1,
+                "units": 5,
+                "lessons": 16,
+                "topics": 22,
+                "students": 300,
+                "img":"imageMask-3.png",
+                "classes": ["All Classes"]
+            },
+            {
+                "id":4,
+                "name": "Introduction to High School Mathematics",
+                "subject": "Mathematics",
+                "plus":"3",
+                "grade": 8,
+                "students": 300,
+                "startDate": "21-Jan-2020",
+                "endDate": "21-Aug-2020",
+                "img":"imageMask-2.png",
+                "classes": ["Mr. Frank's Class A", "Mr. Frank's Class B"]
+            }
+        ];
+
+        function populateCourseData() {
+            const coursesContainer = document.getElementById('courses-container');
+            
+            coursesData.forEach(course => {
+                
+                const courseCard = document.createElement('div');
+                courseCard.classList.add('course-card');
+
+                courseCard.innerHTML = `
+                    <div class="course">
+                        ${course.id === 4 ? '<div id="expired">EXPIRED</div>' : ''}
+                        <img src="${course.img}" alt="" class="course-img">
+                        <div class="courses-details">
+                            <div class="line-1">
+                                <div class="course-name">${course.name}</div> 
+                               ${course.id==4?'<img class="star-disabled" src="favourite.svg" alt="">':'<img class="star-disabled" src="favourite.svg" alt="">'} 
+                            </div>
+                            <div class="line-2 regular-course-label">
+                                ${course.subject}
+                                <div class="subject">|</div>
+                                Grade
+                                <div class="result">${course.grade}</div>
+                                <div class="add">+${course.plus}</div>
+                            </div>
+                            <div class="line-3 regular-course-label">
+                                <div class="number-line-2 lm">${course.units ? `${course.units} <span class="custom-lessons">Units</span>` : ''}</div>
+                            
+                                <div class="number-line-2 lm">${course.lessons ? `${course.lessons} <span class="custom-lessons">Lessons</span>` : ''}</div>
+
+
+                                
+                                <div class="number-line-2 lm">${course.topics ? `${course.topics} <span class="custom-lessons">Topics</span>` : ''}</div>
+                                
+                            </div>
+                            <select name="" id="" class="course-class-input">
+                        ${course.classes ? 
+                            course.classes.length > 0 ? 
+                                course.classes.map(className => `<option value="${className}">${className}</option>`).join('') 
+                                : '<option value="">No classes</option>'
+                            : ''}
+                    </select>
+                            
+                           
+                            <div class="line-4 regular-course-label">
+                                <div>${course.students ? course.students + ' Students' : ''}</div>
+                                <div class="subject">|</div>
+                                <div>${course.startDate ? course.startDate : ''}</div>
+                                <div class="subject">-</div>
+                                <div>${course.endDate ? course.endDate : ''}</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="courses-icons">
+                        <img src="preview.svg" alt="">
+                        <img src="manage course.svg" alt="" class="${course.id==1 || course.id==4 ? '' : 'disable'}">
+                        <img src="grade submissions.svg" alt="" class="${course.id==1 || course.id==4 ? '' : 'disable'}">
+                        <img src="reports.svg" alt="">
+                    </div>
+                
+                `;
+
+                coursesContainer.appendChild(courseCard);
+            });
+        }
+
+        // Call the function to populate data when the page loads
+        window.onload = populateCourseData;
+    </script>
+       <script src="Notification.js"></script>
+       <script src="Annoucement.js"></script>
+</body>
+
+</html>
