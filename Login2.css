@@ -160,8 +160,8 @@ input[type="checkbox"] {
 
 .submit {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+border: none;
     align-self: center;
     width: 216px;
     padding-top: 11px;
@@ -227,4 +227,8 @@ input[type="checkbox"] {
     .main{
         margin: 50px 140px auto 140px;
     }
+}
+.anchor{
+    text-decoration: none;
+    color: black;
 }
