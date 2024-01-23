@@ -11,7 +11,7 @@ const coursesData = [
         "students": 50,
         "startDate": "21-Jan-2020",
         "endDate": "21-Aug-2020",
-        "img":"imageMask-1.svg",
+        "img":"/Assets/imageMask-1.svg",
         "classes": ["Mr. Frank's Class A", "Mr. Frank's Class B"]
     },
     {
@@ -23,7 +23,7 @@ const coursesData = [
         "units": 4,
         "lessons": 15,
         "topics": 20,
-        "img":"imageMask-1.png",
+        "img":"/Assets/imageMask-1.png",
         "classes": []
     },
     {
@@ -36,7 +36,7 @@ const coursesData = [
         "lessons": 16,
         "topics": 22,
         "students": 300,
-        "img":"imageMask-3.png",
+        "img":"/Assets/imageMask-3.png",
         "classes": ["All Classes"]
     },
     {
@@ -48,7 +48,7 @@ const coursesData = [
         "students": 300,
         "startDate": "21-Jan-2020",
         "endDate": "21-Aug-2020",
-        "img":"imageMask-2.png",
+        "img":"/Assets/imageMask-2.png",
         "classes": ["Mr. Frank's Class A", "Mr. Frank's Class B"]
     }
 ];
@@ -68,7 +68,7 @@ function populateCourseData() {
                 <div class="courses-details">
                     <div class="line-1">
                         <div class="course-name">${course.name}</div> 
-                       ${course.id==4?'<img class="star-disabled" src="favourite.svg" alt="">':'<img class="star-disabled" src="favourite.svg" alt="">'} 
+                       ${course.id==4?'<img class="star-disabled" src="favourite.svg" alt="">':'<img class="star-disabled" src="./Assets/favourite.svg" alt="">'} 
                     </div>
                     <div class="line-2 regular-course-label">
                         ${course.subject}
