@@ -121,8 +121,8 @@ body {
 }
 .header .nav:hover .alerts-announcements .alert-show-button,
 .header .nav:hover .alerts-announcements .announcement-show-button {
-  position: sticky;
-  bottom: 0;
+  position: relative;
+  bottom: 10;
   left: 0;
   text-align: center;
   background: #ffffff;
@@ -516,9 +516,9 @@ body {
     color: red;
     font-weight: bold;
     background-color: #FFE4E6;
-    padding: 0.2rem;
-    width: fit-content;
-    position: relative;
+    padding:0;
+    
+    position:sticky;
     margin-bottom:0px;
     height:12px;
     

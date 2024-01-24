@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>todo</title>
+    </head>
+    <body>
+        <div id="DIV1">
+            <h2>My To Do List</h2>
+            <input type="text" id="Input1" placeholder="Title...">
+            <span onclick="fun()">Add</span>
+          </div>
+          
+          <ul id="UL1">
+            <li>ZeusLearning</li>
+            <li >PrivateSystems</li>
+            <li>Surat</li>
+            <li>Mumbai</li>
+            <li>Ahmedabad</li>
+            <li>Vadodra</li>
+          </ul>
+          <script>
+            var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(e) {
+  if (e.target.tagName === 'LI') {
+    e.target.classList.toggle('checked');
+  }
+}, false);
+
+
+function fun() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("Input1").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("No input is invalid");
+  } else {
+    document.getElementById("UL1").appendChild(li);
+  }
+  document.getElementById("Input1").value = "";
+
+  var span = document.createElement("SPAN");
+  
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+          </script>
+    </body>
+</html>

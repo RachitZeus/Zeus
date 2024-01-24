@@ -63,7 +63,7 @@ function populateCourseData() {
 
         courseCard.innerHTML = `
             <div class="course">
-                ${course.id === 4 ? '<div id="expired">EXPIRED</div>' : ''}
+                 
                 <img src="${course.img}" alt="" class="course-img">
                 <div class="courses-details">
                     <div class="line-1">
